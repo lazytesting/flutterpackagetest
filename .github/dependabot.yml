@@ -6,6 +6,8 @@
 version: 2
 updates:
   - package-ecosystem: "pub" # See documentation for possible values
-    directory: "/" # Location of package manifests
+    directory: "/consumertest" # Location of package manifests
     schedule:
       interval: "daily"
+      time: "08:40"
+      timezone: "Europe/Amsterdam"
