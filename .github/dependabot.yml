@@ -6,6 +6,8 @@
 version: 2
 updates:
   - package-ecosystem: "pub" # See documentation for possible values
+    token: ${{secrets.CLOUDSMITH}}
+    url: https://dart.cloudsmith.io/maarten-test-org/test-repo/
     directory: "/consumertest" # Location of package manifests
     schedule:
       interval: "daily"
