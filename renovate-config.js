@@ -9,6 +9,7 @@ module.exports = {
     "repositories": ["lazytesting/flutterpackagetest"],
     "packageRules": [
       {
+        "matchDatasources": ["dart"],
         "description": "lockFileMaintenance",
         "matchUpdateTypes": [
           "pin",
