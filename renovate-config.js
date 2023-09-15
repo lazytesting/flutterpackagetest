@@ -6,21 +6,5 @@ module.exports = {
     "platform": "github",
     "forkProcessing": "disabled",
     "repositories": ["lazytesting/flutterpackagetest"],
-    "packageRules": [
-          {
-            "matchDatasources": ["dart"],
-            "description": "lockFileMaintenance",
-            "matchUpdateTypes": [
-                "pin",
-                "digest",
-                "patch",
-                "minor",
-                "major",
-                "lockFileMaintenance"
-            ],
-            "dependencyDashboardApproval": false,
-            "minimumReleaseAge": null
-        }
-        ],
-        
+     
   };
