@@ -5,7 +5,6 @@ module.exports = {
     "onboarding": false,
     "platform": "github",
     "forkProcessing": "disabled",
-    "dryRun": "full",
     "repositories": ["lazytesting/flutterpackagetest"],
     "packageRules": [
       {
