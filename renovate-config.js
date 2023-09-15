@@ -6,14 +6,14 @@ module.exports = {
     "platform": "github",
     "forkProcessing": "disabled",
     "repositories": ["lazytesting/flutterpackagetest"],
-    "packageRules": [
-        {
-            "matchPackagePatterns": ['.*'],
-            "matchManagers": ['pub'],
-            "groupName": 'Flutter Dependencies',
-            "dependencyDashboardApproval": false,
-            "minimumReleaseAge": null
-          },
-        ],
+    // "packageRules": [
+    //     {
+    //         "matchPackagePatterns": ['.*'],
+    //         "matchManagers": ['pub'],
+    //         "groupName": 'Flutter Dependencies',
+    //         "dependencyDashboardApproval": false,
+    //         "minimumReleaseAge": null
+    //       },
+    //     ],
         
   };
