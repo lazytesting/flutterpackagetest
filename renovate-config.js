@@ -7,19 +7,13 @@ module.exports = {
     "forkProcessing": "disabled",
     "repositories": ["lazytesting/flutterpackagetest"],
     "packageRules": [
-      {
-        "matchDatasources": ["dart"],
-        "description": "lockFileMaintenance",
-        "matchUpdateTypes": [
-          "pin",
-          "digest",
-          "patch",
-          "minor",
-          "major",
-          "lockFileMaintenance"
+        {
+            "matchPackagePatterns": ['.*'],
+            "matchManagers": ['pub'],
+            "groupName": 'Flutter Dependencies',
+            "dependencyDashboardApproval": false,
+            "minimumReleaseAge": null
+          },
         ],
-        "dependencyDashboardApproval": false,
-        "minimumReleaseAge": null
-      }
-    ]
+        
   };
