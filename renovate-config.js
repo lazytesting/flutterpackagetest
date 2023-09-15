@@ -6,7 +6,7 @@ module.exports = {
     platform: 'github',
     includeForks: false,
     dryRun: 'full',
-    repositories: ['lazytesting/flutterpackagetest1'],
+    repositories: ['lazytesting/flutterpackagetest'],
     packageRules: [
       {
         description: 'lockFileMaintenance',
