@@ -19,5 +19,5 @@ updates:
     versioning-strategy: increase
     registries:
       - cloudsmith-registry
-     allow:
-        - dependency-name: "providerpackage"
+    allow:
+      - dependency-name: "providerpackage"
