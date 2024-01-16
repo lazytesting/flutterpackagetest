@@ -4,6 +4,11 @@
 # https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
+registries:
+  cloudsmith-registry:
+    type: pub-repository
+    url: https://dart.cloudsmith.io/maarten-test-org/test-repo/
+    token: ${{secrets.CLOUDSMITH}}
 updates:
   - package-ecosystem: "pub" # See documentation for possible values
     directory: "/consumertest" # Location of package manifests
@@ -11,3 +16,8 @@ updates:
       interval: "daily"
       time: "08:40"
       timezone: "Europe/Amsterdam"
+    versioning-strategy: increase
+    registries:
+      - cloudsmith-registry
+     allow:
+        - dependency-name: "providerpackage"
